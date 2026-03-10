@@ -1,0 +1,15 @@
+scoreboard players add @e[scores={sp-1=1..}] sp-1 1
+scoreboard players add @e[scores={sp-2=1..}] sp-2 1
+scoreboard players add @e[scores={sp-3=1..}] sp-3 1
+scoreboard players add @e[scores={s-1=1..}] s-1 1
+scoreboard players add @e[scores={s-2=1..}] s-2 1
+scoreboard players add @e[scores={re-1=1..}] re-1 1
+scoreboard players add @e[scores={re-2=1..}] re-2 1
+scoreboard players add @e[scores={danmakukekkai-1=1..}] danmakukekkai-1 1
+scoreboard players add @e[scores={danmakukekkai-2=1..}] danmakukekkai-2 1
+scoreboard players add @e[scores={danmakukekkai-3=1..}] danmakukekkai-3 1
+scoreboard players add @e[scores={danmakukekkai-4=1..}] danmakukekkai-4 1
+scoreboard players add @e[scores={st-1=1..}] st-1 1
+scoreboard players add @e[scores={st-2=1..}] st-2 1
+scoreboard players add @e[scores={st-3=1..}] st-3 1
+scoreboard players add @e[scores={st-4=1..}] st-4 1
