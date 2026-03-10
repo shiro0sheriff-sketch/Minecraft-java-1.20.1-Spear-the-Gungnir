@@ -2,12 +2,12 @@ execute as @e[scores={sp-1=2}] at @s run summon armor_stand ^ ^ ^-2 {Invisible:1
 execute as @e[scores={sp-1=2}] at @s positioned ^ ^ ^-2 run scoreboard players add @e[type=armor_stand,limit=1,distance=..1,sort=nearest] sp-2 1
 execute as @e[scores={sp-1=2}] at @s run summon armor_stand ^ ^ ^-3 {Invisible:1b,NoGravity:1b}
 execute as @e[scores={sp-1=2}] at @s positioned ^ ^ ^-3 run scoreboard players add @e[type=armor_stand,limit=1,distance=..1,sort=nearest] sp-3 1
-execute as @e[scores={sp-2=2..}] at @s run function spell:sp-1
+execute as @e[scores={sp-2=2..}] at @s run function sp-1
 execute as @e[scores={sp-3=1}] at @s run tp @s ~ ~ ~ facing entity @e[scores={sp-1=2..5},sort=nearest,limit=1]
 execute as @e[scores={sp-3=1}] at @s run tp @s ^-3 ^1 ^5
-execute as @e[scores={sp-3=2..}] at @s run function spell:sp-3
-execute as @e[scores={sp-3=2..}] at @s positioned ^0.5 ^ ^15 run function spell:sp-3
-execute as @e[scores={sp-3=2..}] at @s positioned ^1 ^ ^25 run function spell:sp-3
+execute as @e[scores={sp-3=2..}] at @s run function sp-3
+execute as @e[scores={sp-3=2..}] at @s positioned ^0.5 ^ ^15 run function sp-3
+execute as @e[scores={sp-3=2..}] at @s positioned ^1 ^ ^25 run function sp-3
 execute as @e[scores={sp-2=1}] at @s run tp @s ~ ~ ~ facing entity @e[scores={sp-1=2..5},sort=nearest,limit=1]
 execute as @e[scores={sp-2=1}] at @s run tp @s ^-3 ^ ^5
 execute as @e[scores={sp-2=80}] at @s run tp @s ^0.5 ^ ^
@@ -67,4 +67,5 @@ execute as @e[scores={sp-2=80..194}] at @s unless block ^ ^ ^2 air run scoreboar
 execute as @e[scores={sp-2=80..194}] at @s unless block ^ ^ ^1 air run scoreboard players set @s sp-2 195
 execute as @e[scores={sp-2=80..194}] at @s unless block ^ ^ ^2 air run scoreboard players set @s sp-2 195
 execute as @e[scores={sp-1=..80}] at @s run title @s actionbar "スピア・ザ・グングニル"
+
 execute as @e[scores={sp-2=80..}] at @s run tp @s ^ ^ ^1
